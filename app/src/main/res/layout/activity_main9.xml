@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myproject.Main8Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_thinks"/>
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_what"/>
+
+
+            <CheckBox
+                android:id="@+id/lviv_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/lviv"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/terebovla_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/terebovla"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/other_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/other"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/grade"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                tools:showIn="@layout/activity_main">
+
+                <Button
+                    android:id="@+id/minus_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick=""
+                    android:paddingRight="8dp"
+                    android:text="@string/minus" />
+
+                <TextView
+                    android:id="@+id/grade_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grade_coint"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/plus_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:onClick=""
+                    android:paddingLeft="8dp"
+                    android:text="@string/plus" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/comments_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/comments"
+                android:inputType="textCapWords" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendFeedback"
+                android:paddingBottom="16dp"
+                android:text="@string/send_feedback" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backToStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:onClick=""
+            android:text="@string/back_to_start"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/linear"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back8Activity"
+            android:layout_margin="16dp"
+            android:onClick=""
+            android:text="@string/back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linear"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
